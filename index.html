@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To-Do list project</title>
+    <style>
+      body{
+        margin: 0;
+      }
+      .form{
+        background-color: #00a5ff;
+        display: block;
+        padding: 20px 10px;
+      }
+      .textinput{
+        width: 90%;
+        display: inline-block;
+      }
+      .textinput input{
+        width: 90%;
+      }
+      #addbtn{
+        width: 8%;
+      }
+      .list-item{
+        padding: 5px 60px 5px 10px;
+        position: relative;
+      }
+      .list-item:nth-child(even){
+        background-color: #eee;
+      }
+      .list-item a{
+        position: absolute;
+        right: 10px;
+        top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <div class="textinput">
+        <input type="text" id="text" value="" placeholder="Enter note">
+      </div>
+      <button type="button" id="addbtn" onclick="addnote();">Add</button>
+    </div>
+    <div class="list">test</div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
